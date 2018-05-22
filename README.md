@@ -1,67 +1,101 @@
-# Coffeekraken s-{component-name}-component <img src=".resources/coffeekraken-logo.jpg" height="25px" />
+# Coffeekraken s-dropdown-component <img src=".resources/coffeekraken-logo.jpg" height="25px" />
 
 <p>
-	<a href="https://travis-ci.org/{repository-path}">
-		<img src="https://img.shields.io/travis/{repository-path}.svg?style=flat-square" />
+	<a href="https://travis-ci.org/coffeekraken/s-dropdown-component">
+		<img src="https://img.shields.io/travis/coffeekraken/s-dropdown-component.svg?style=flat-square" />
 	</a>
-	<a href="https://www.npmjs.com/package/{npm-package-name}">
-		<img src="https://img.shields.io/npm/v/{npm-package-name}.svg?style=flat-square" />
+	<a href="https://www.npmjs.com/package/coffeekraken-s-dropdown-component">
+		<img src="https://img.shields.io/npm/v/coffeekraken-s-dropdown-component.svg?style=flat-square" />
 	</a>
-	<a href="https://github.com/{repository-path}/blob/master/LICENSE.txt">
-		<img src="https://img.shields.io/npm/l/{npm-package-name}.svg?style=flat-square" />
+	<a href="https://github.com/coffeekraken/s-dropdown-component/blob/master/LICENSE.txt">
+		<img src="https://img.shields.io/npm/l/coffeekraken-s-dropdown-component.svg?style=flat-square" />
 	</a>
-	<!-- <a href="https://github.com/{repository-path}">
-		<img src="https://img.shields.io/npm/dt/{npm-package-name}.svg?style=flat-square" />
+	<!-- <a href="https://github.com/coffeekraken/s-dropdown-component">
+		<img src="https://img.shields.io/npm/dt/coffeekraken-s-dropdown-component.svg?style=flat-square" />
 	</a>
-	<a href="https://github.com/{repository-path}">
-		<img src="https://img.shields.io/github/forks/{repository-path}.svg?style=social&label=Fork&style=flat-square" />
+	<a href="https://github.com/coffeekraken/s-dropdown-component">
+		<img src="https://img.shields.io/github/forks/coffeekraken/s-dropdown-component.svg?style=social&label=Fork&style=flat-square" />
 	</a>
-	<a href="https://github.com/{repository-path}">
-		<img src="https://img.shields.io/github/stars/{repository-path}.svg?style=social&label=Star&style=flat-square" />
+	<a href="https://github.com/coffeekraken/s-dropdown-component">
+		<img src="https://img.shields.io/github/stars/coffeekraken/s-dropdown-component.svg?style=social&label=Star&style=flat-square" />
 	</a> -->
-	<a href="https://twitter.com/{twitter-username}">
-		<img src="https://img.shields.io/twitter/url/http/{twitter-username}.svg?style=social&style=flat-square" />
+	<a href="https://twitter.com/coffeekrakenio">
+		<img src="https://img.shields.io/twitter/url/http/coffeekrakenio.svg?style=social&style=flat-square" />
 	</a>
 	<a href="http://coffeekraken.io">
 		<img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=flat-square&label=coffeekraken.io&colorB=f2bc2b&style=flat-square" />
 	</a>
 </p>
 
-{component-description}
+Full stack dropdown styling component with dropup, right aligned and colors support. Fully customizable as well.
 
 ## Table of content
 
-1. **[Demo](http://components.coffeekraken.io/app/s-{component-name}-component)**
-2. [Install](#readme-install)
-3. [Get Started](#readme-get-started)
-4. [Javascript API](doc/js)
+1. **[Demo](http://components.coffeekraken.io/app/s-dropdown-component)**
+2. [Features](#readme-features)
+3. [Install](#readme-install)
+4. [Get Started](#readme-get-started)
 5. [SASS API](doc/sass)
-6. [Sugar Web Components Documentation](https://github.com/coffeekraken/sugar/blob/master/doc/webcomponent.md)
-7. [Browsers support](#readme-browsers-support)
-8. [Contribute](#readme-contribute)
-9. [Who are Coffeekraken?](#readme-who-are-coffeekraken)
-10. [Licence](#readme-license)
+6. [Browsers support](#readme-browsers-support)
+7. [Contribute](#readme-contribute)
+8. [Who are Coffeekraken?](#readme-who-are-coffeekraken)
+9. [Licence](#readme-license)
+
+<a name="readme-features"></a>
+## Features
+
+1. Fully customizable dropdown menu
+2. Colors support
+3. Dropup support
+4. Right aligned dropdown support
 
 <a name="readme-install"></a>
 ## Install
 
 ```
-npm install coffeekraken-s-{component-name}-component --save
+npm install coffeekraken-s-dropdown-component --save
 ```
 
 <a name="readme-get-started"></a>
 ## Get Started
 
-First, import the component into your javascript file like so:
+First, import the component into your scss file like so:
 
-```js
-import ComponentName from 'coffeekraken-s-{component-name}-component'
+```scss
+@import 'node_modules/coffeekraken-s-dropdown-component/index';
+```
+
+Then, generate the classes using the provided mixins like so:
+
+```scss
+@include s-dropdown-classes(
+	$colors: default primary secondary
+);
 ```
 
 Then simply use it inside your html like so:
 
 ```html
-<s-{component-name}></s-{component-name}>
+<div class="dropdown">
+	<a class="btn">Display dropdown</a>
+	<ul class="dropdown__menu">
+		<li class="dropdown__item">
+			<a href="#" title="...">
+				Item 1
+			</a>
+		</li>
+		<li class="dropdown__item">
+			<a href="#" title="...">
+				Item 2
+			</a>
+		</li>
+		<li class="dropdown__item">
+			<a href="#" title="...">
+				Item 3
+			</a>
+		</li>
+	</ul>
+</div>
 ```
 
 <a id="readme-browsers-support"></a>
