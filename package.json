@@ -1,6 +1,6 @@
 {
   "name": "coffeekraken-s-dropdown-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Full stack dropdown styling component with dropup, right aligned and colors support. Fully customizable as well.",
   "main": "dist/index.js",
   "homepage": "http://coffeekraken.io",
