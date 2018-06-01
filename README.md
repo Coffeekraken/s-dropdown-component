@@ -1,9 +1,9 @@
 # Coffeekraken s-dropdown-component <img src=".resources/coffeekraken-logo.jpg" height="25px" />
 
 <p>
-	<a href="https://travis-ci.org/coffeekraken/s-dropdown-component">
+	<!-- <a href="https://travis-ci.org/coffeekraken/s-dropdown-component">
 		<img src="https://img.shields.io/travis/coffeekraken/s-dropdown-component.svg?style=flat-square" />
-	</a>
+	</a> -->
 	<a href="https://www.npmjs.com/package/coffeekraken-s-dropdown-component">
 		<img src="https://img.shields.io/npm/v/coffeekraken-s-dropdown-component.svg?style=flat-square" />
 	</a>
