@@ -150,11 +150,7 @@ module.exports = {
 				@import 'node_modules/coffeekraken-s-button-component/index';
 				@include s-button-classes();
 				body {
-					background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-				}
-				.container {
-					@include s-position(absolute, middle, center);
-					min-width:80vw;
+					padding: s-space(bigger);
 				}
 				@import 'index';
 				// @import 'node_modules/coffeekraken-s-dropdown-component/index';

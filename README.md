@@ -29,6 +29,8 @@
 
 Full stack dropdown styling component with dropup, right aligned and colors support. Fully customizable as well.
 
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-dropdown-component)
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-dropdown-component)**
